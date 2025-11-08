@@ -21,8 +21,7 @@
   </footer>
 
   <script type="module">
-    const BACKEND_URL = "https://zen-paper-grader.onrender.com"; // 🔗 replace with your Render backend URL
-
+    const res = await fetch("https://zen-paper-grader.onrender.com/api/evaluate", {
     const state = {
       files: [],
       previews: [],
