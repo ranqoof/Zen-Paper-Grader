@@ -6,7 +6,6 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 
-// ✅ Keep your key PRIVATE (never upload to GitHub)
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 app.post("/api/evaluate", async (req, res) => {
